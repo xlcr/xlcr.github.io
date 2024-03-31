@@ -179,18 +179,19 @@
     margin: 0rem 1rem;
     position: relative;
     transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #homepage .homepage-resume .resume-timeline .timeline-slot .timeline-box.filled {
     cursor: pointer;
     background-color: #00000005;
   }
-  #homepage .homepage-resume .resume-timeline .timeline-slot .timeline-box div {
+  #homepage .homepage-resume .resume-timeline .timeline-slot .timeline-box div:last-child {
     font-size: 0.8rem;
     color: grey;
     text-align: right;
-    bottom: 1rem;
-    right: 1rem;
-    position: absolute;
+    margin-top: 10px;
   }
   #homepage .homepage-resume .resume-timeline .timeline-slot.active .timeline-box.filled {
     background-color: #00000015;
@@ -200,7 +201,6 @@
   }
   #homepage .homepage-resume .resume-description {
     padding: 2rem 4rem;
-    height: 100vh;
     background-color: #42424299;
     display: grid;
     position: relative;
@@ -310,7 +310,7 @@
   #homepage .portfolio-carousel {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     flex-flow: row wrap;
@@ -336,6 +336,7 @@
     width: 25vw;
     height: 12.5vw;
     background-color: rgba(var(--black), 0.4);
+    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -343,6 +344,11 @@
     font-family: var(--yeseva);
     font-size: 1.6rem;
     color: rgba(var(--white));
+    padding: 20px;
+    text-align: center;
+  }
+  #homepage .portfolio-carousel .homepage-proj a, #homepage .portfolio-carousel .homepage-proj a:visited {
+    color: rgba(var(--white), 1);
   }
   @media screen and (max-width: 900px) {
     #homepage {
@@ -364,7 +370,7 @@
       display: block !important;
     }
     #homepage .timeline-slot .timeline-box.filled {
-      height: 100px;
+      min-height: 100px;
       width: 50vw;
     }
     #homepage .timeline-slot .timeline-box:not(.filled), #homepage .timeline-slot .timeline-stalk {
@@ -391,7 +397,7 @@
       height: 25vw;
     }
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 665px) {
     #homepage .front-panel {
       flex-direction: column !important;
       padding: 5rem 3rem !important;
@@ -412,8 +418,11 @@
       width: 80vw !important;
       height: 20vh !important;
     }
+    .skills-block {
+      padding: 10px 20px 20px !important;
+    }
     .skills-block h2 {
-      font-size: 1.5rem !important;
+      font-size: 1.2rem !important;
     }
   }
   
