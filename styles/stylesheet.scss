@@ -118,8 +118,9 @@ a:visited, a {
 
 		.homepage-btn {
 			@include flex(row, flex-end, center);
-			width: 150px;
+			width: 200px;
 			margin: 5px 0px;
+			text-align: right;
 
 			div {
 				margin: 12px 10px auto 10px;
@@ -424,7 +425,7 @@ a:visited, a {
 			}
 
 			.timeline-box:not(.filled), .timeline-stalk {
-				display: none;
+				display: none !important;
 			}
 		}
 

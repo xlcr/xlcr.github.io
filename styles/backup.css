@@ -94,7 +94,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 150px;
+    width: 200px;
     margin: 5px 0px;
   }
   #homepage .homepage-buttons .homepage-btn div {
@@ -374,7 +374,7 @@
       width: 50vw;
     }
     #homepage .timeline-slot .timeline-box:not(.filled), #homepage .timeline-slot .timeline-stalk {
-      display: none;
+      display: none !important;
     }
     #homepage .resume-details {
       transform: translatey(200px) !important;
