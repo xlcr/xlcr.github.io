@@ -443,6 +443,12 @@ a:visited, a {
 
 		.portfolio-carousel {
 			@include flex(column, flex-start, center);
+
+			a {
+				display: block;
+				width: 100%;
+			}
+
 			.homepage-proj {
 				max-width: 100%;
 				width: 50vw ;

@@ -396,6 +396,10 @@
       width: 50vw;
       height: 25vw;
     }
+    #homepage .portfolio-carousel a {
+      display: block;
+      width: 100%;
+    }
   }
   @media screen and (max-width: 665px) {
     #homepage .front-panel {
