@@ -497,4 +497,13 @@ a:visited, a {
 			font-size: 1.2rem !important;
 		}
 	}
+
+	.timeline-slot { 
+		flex: none;
+	}
+
+	ul {
+		padding-left: 0px; 
+	}
+
 }

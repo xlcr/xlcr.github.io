@@ -428,5 +428,11 @@
     .skills-block h2 {
       font-size: 1.2rem !important;
     }
+    .timeline-slot { 
+      flex: none;
+    }
+    ul {
+      padding-left: 0px; 
+    }
   }
   
